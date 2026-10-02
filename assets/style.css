@@ -1,0 +1,43 @@
+/* All commons css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #dddddd;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+       
+}
+
+/* All commons css end */
+
+
+
+@keyframes blur-fade {
+  0% { filter: blur(12px); opacity: 0; }
+  100% { filter: blur(0); opacity: 1; }
+}
+.animate-element {
+  animation: text-blur-keyframe 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s infinite;
+}
+
+/* Modified Keyframe definition */
+@keyframes text-blur-keyframe {
+  0% { filter: blur(12px); opacity: 0; }
+  100% { filter: blur(0); opacity: 1; }
+}
+.animate-element {
+  animation: blur-fade 1.8s cubic-bezier(0.25, 1, 0.5, 1) infinite alternate;
+}
+
+
+
